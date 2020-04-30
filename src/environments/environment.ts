@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://localhost:44395/api',
+  apiBaseUrl: 'https://flyingdonkeyapiservice.azurewebsites.net/api',
+  // apiBaseUrl: 'https://localhost:44395/api',
 };
 
 /*

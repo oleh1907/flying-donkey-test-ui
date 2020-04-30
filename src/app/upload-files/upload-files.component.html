@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="username">Username:</span>
+      <span class="input-group-text">Username:</span>
     </div>
     <input
       name="username"
@@ -31,6 +31,7 @@
       Name must not be more than 20 characters long.
     </div>
   </div>
+
   <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text" id="fileInputAddon">File:</span>
@@ -39,7 +40,7 @@
       <input
         id="fileInput"
         type="file"
-        class="custom-file-input"
+        class="form-control"
         name="file"
         (change)="onFileSelect($event)"
         aria-describedby="fileInputAddon"
@@ -47,7 +48,7 @@
         #fileInput="ngModel"
         required
       />
-      <label class="custom-file-label" for="fileInput">{{
+      <label class="custom-file-label overflow-hidden" for="fileInput">{{
         fileInput.value
       }}</label>
     </div>

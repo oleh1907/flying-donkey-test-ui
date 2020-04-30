@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://localhost:44395/api',
+  apiBaseUrl: 'https://flyingdonkeyapiservice.azurewebsites.net/api',
 };
